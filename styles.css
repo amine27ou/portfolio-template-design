@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(27,31,36,255);
+    color: white;
+}
+.header{
+    position: relative;
+    background-image: url(images/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.logo span{
+    color: rgb(37, 145, 233);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px ;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(27,31,36,255);
+    z-index: 10;
+}
+.navlinks ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.navlinks ul li a{
+    color: white;
+    transition: all .4s;
+}
+.navlinks ul li a:hover{
+    color: rgb(37, 145, 233);
+    text-shadow: 0 0 20px rgb(37, 145, 233);
+}
+.btn{
+    color: rgb(37, 145, 233);
+    border: 1px solid rgb(37, 145, 233);
+    background: transparent;
+    height: 36px;
+    width: 120px;
+    border-radius: 4px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgba(27,31,36,255);
+    background-color: rgb(37, 145, 233);
+    box-shadow: 0 0 20px rgb(37, 145, 233);
+
+}
+.hamburger{
+    cursor: pointer;
+    display:none;
+}
+.hamburger span{
+    height: 2px;
+    width: 20px;
+    background: white;
+    margin: 4px 0;
+    display: block;
+}
+.content{
+    padding: 0 100px;
+    transform: translateY(60%);
+}
+.col{
+    width: 600px;
+}
+.col h1{
+    font-size: 60px;
+}
+.col span{
+    color: rgb(37, 145, 233);
+}
+.col p{
+    color: grey;
+    text-transform: lowercase;
+    margin: 10px 0;
+}
+.social-media i{
+    color: rgb(37, 145, 233);
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    background-color: rgb(23, 27, 31);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: inline-flex;
+    transition: all .3s;
+}
+.social-media i:hover{
+    box-shadow: 0 0 20px rgb(37, 145, 233);
+    transform: scale(1.1);
+}
+.sml{
+    height: 36px;
+    width: 80px;
+    border-radius: 4px;
+    transition: all .4s;
+    cursor: pointer;
+    color: rgba(27,31,36,255);
+    background-color: rgb(37, 145, 233);
+    border: none;
+}
+.sml:hover{
+    color: rgb(37, 145, 233);
+    border: 1px solid rgb(37, 145, 233);
+    background: transparent;
+    box-shadow: 0 0 20px rgb(37, 145, 233);
+}
+.buttons{
+    margin: 10px 0;
+}
+.about{
+    background-color: rgb(36, 42, 49);
+    padding: 40px ;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0 100px;
+}
+.selfie img{
+    width: 350px;
+    border-radius: 50%;
+    border: 3px solid rgb(37, 145, 233);
+}
+.info span{
+    color: rgb(37, 145, 233);
+}
+.info h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 15px 0;
+}
+.line p{
+    color: rgb(95, 104, 117);
+}
+.services{
+    padding: 0 100px;
+}
+.about .sml{
+    width: 120px;
+    margin: 20px 0;
+}
+.title{
+    text-align: center;
+    margin: 50px 0;
+}
+.title span{
+    color: rgb(37, 145, 233);
+}
+.container{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+}
+.card{
+    border: 2px solid rgb(37, 145, 233);
+    background-color: rgb(36, 42, 49);
+    border-radius: 20px;
+    padding: 20px;
+    transition:all .4s;
+}
+.card .icon i{
+    background: rgb(37, 145, 233);
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card p{
+    text-transform: lowercase;
+    font-size: 15px;
+    margin: 10px 0;
+    color: #ccc;
+}
+.card a{
+    border-bottom: 2px solid rgb(171, 171, 171);
+    color: white;
+}
+.card a i{
+    color: rgb(37, 145, 233);
+}
+.card:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 10px rgb(37, 145, 233);
+}
+.portfolio{
+    padding: 0 100px;
+}
+.portfolio .card img{
+    width: 310px;
+    border-radius: 10px;
+}
+.portfolio .card{
+    width: 350px;
+}
+.portfolio .card .icon i{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio .container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0;
+}
+form input,textarea{
+    outline: none;
+    border: 1px solid rgb(37, 145, 233);
+    background-color:rgb(36, 42, 49) ;
+    resize: none;
+    width: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+form textarea{
+    height: 140px;
+}
+form .sml{
+    width: 120px;
+}
+footer{
+    background-color: rgb(36, 42, 49);
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer i{
+    background: rgb(37, 145, 233);
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    cursor: pointer;
+}
+@media(max-width:728px){
+    .content{
+        padding: 10px;
+    }
+    .navbar{
+        padding: 10px;
+    }
+    .about .row{
+        flex-direction: column;
+    }
+    .hamburger.active{
+        position: absolute;
+        right: 20px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navlinks ul{
+        position: fixed;
+        right: -100%;
+        top: 0px;
+        bottom: 0px;
+        background: rgba(27,31,36,255);
+        flex-direction: column;
+        display: block;
+        display: flex;
+        align-items: center;
+        transition: all .4s;
+
+    }
+    .navlinks ul.active{
+        left: 50%;
+        right: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: rotate(45deg) translateY(8px);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: rotate(-45deg) translateY(-9px);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+}
